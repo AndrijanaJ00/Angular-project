@@ -2,9 +2,13 @@
 <div class="book-container">
     <div class="top">
         <div class="left">
-            <div class="name"></div>
-            <div class="rating"></div>
-            <div class="cover"></div>
+            <div class="name">{{book?.name}}</div>
+            <div class="rating">
+                <app-star-rating [rating]="book?.raiting" [isReadOnly]="true"></app-star-rating>>
+            </div>
+            <div class="cover">
+                <img [src]="book?.cover" alt="">
+            </div>
         </div>
         <div class="right"></div>
     </div>
