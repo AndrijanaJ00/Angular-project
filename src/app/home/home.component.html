@@ -28,11 +28,11 @@
             </div>
             <div class="books-thumbnail">
                 <div class="book" *ngFor="let book of popularNow">
-                    <div class="cover"  (click)="goToBook('popular', book.id)">
+                    <div class="cover"  (click)="goToBook('theatre', book.id)">
                         <img [src]="book.cover" alt="">
                     </div>
                     <div class="detail">
-                        <div class="name"  (click)="goToBook('popular', book.id)">{{book.name}}</div>
+                        <div class="name"  (click)="goToBook('theatre', book.id)">{{book.name}}</div>
                         <div class="rating">
                             <span class="rating-value">{{book.rating}}</span>
                             <app-star-rating [rating]="book.rating" [isReadOnly]="true"></app-star-rating>
