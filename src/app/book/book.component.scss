@@ -44,6 +44,9 @@
 
             .title {
                 margin-bottom: 30px;
+                font-size: 20px;
+                font-weight: bold;
+
             }
 
             .rating-form {
@@ -72,10 +75,11 @@
     }
 
     .bottom {
-        margin-top: 50px;
+        margin-top: -50px;
 
         .title {
             margin-bottom: 30px;
+            
         }
 
         .reviews {
