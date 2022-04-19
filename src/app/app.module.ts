@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BookComponent } from './book/book.component';
 import { FeatureModule } from './feature/feature.module';
@@ -24,7 +24,8 @@ import { FeatureModule } from './feature/feature.module';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    FeatureModule
+    FeatureModule,  
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

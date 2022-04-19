@@ -13,25 +13,25 @@
         </div>
         <div class="right">
             <div class="title">Rate this book</div>
-            <div class="rating-form">
+            <form [formGroup]="form" class="rating-form">
                 <div class="form-group">
-                    <label for="uname">Name</label>
-                    <input type="text" name="uname" class="form-control">
+                    <label >Name</label>
+                    <input type="text" formControlName="author" name="uname" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="rating">Rating</label>
+                    <label >Rating</label>
                     <div class="rating">
-                        <app-star-rating [rating]="0" [isReadOnly]="false"></app-star-rating>
+                        <app-star-rating  [rating]="0" [isReadOnly]="false"></app-star-rating>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="review">Review</label>
-                    <textarea name="review" rows="3" class="form-control"></textarea>
+                    <label >Review</label>
+                    <textarea name="review" formControlName="review" rows="3" class="form-control"></textarea>
                 </div>
                 <div class="btn-container">
-                    <button class="btn btn-dark">Submit</button>
+                    <button class="btn btn-dark" (click)="addReview()">Submit</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
     <div class="bottom">
